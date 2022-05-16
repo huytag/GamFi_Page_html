@@ -1,0 +1,667 @@
+body {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Inter", sans-serif;
+  vertical-align: baseline;
+  line-height: 1.6;
+  font-weight: 500;
+  overflow-x: hidden;
+  /* background-color: #151625; */
+}
+
+a {
+  color: #fff;
+  transition: all 0.3s ease;
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Russo One", sans-serif;
+  color: #ffffff;
+  margin: 0 0 26px;
+  line-height: 1.35;
+  font-weight: 400;
+}
+
+ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.gamfi-header-section {
+  background-color: #090a1a;
+  padding: 25px 0;
+}
+
+.gamfi-header-section.transparent-header {
+  /* background: transparent; */
+  position: absolute;
+  width: 100%;
+  z-index: 12;
+}
+
+.menu-area {
+  position: relative;
+  z-index: 1;
+}
+
+.gamfi-header-section .logo {
+  margin-right: 60px;
+}
+
+.gamfi-header-section .header-menu .nav-menu li {
+  display: inline-block;
+  overflow: visible;
+  position: relative;
+}
+
+.buy-token {
+  position: relative;
+  display: inline-block;
+}
+
+.sub-menu {
+  position: absolute;
+  left: 0px;
+  top: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  transform: scaleY(0);
+  transform-origin: 0 0 0;
+  z-index: 10;
+}
+
+.gamfi-header-section .header-menu .nav-menu li:hover .sub-menu,
+.gamefi-btn-area .menu-gamfi li:hover .sub-menu {
+  opacity: 1;
+  visibility: inherit;
+  transform: scaleY(1);
+}
+
+.gamfi-header-section .header-menu .nav-menu li .sub-menu li:hover a,
+.gamefi-btn-area .menu-gamfi .sub-menu li:hover a {
+  color: #fff;
+  cursor: pointer;
+}
+
+.gamfi-header-section .header-menu .nav-menu li .sub-menu li,
+.gamefi-btn-area .menu-gamfi .sub-menu li {
+  margin-left: 0;
+  margin-bottom: -1px;
+  width: 240px;
+  display: block;
+}
+
+.gamfi-header-section .header-menu .nav-menu li .sub-menu li a,
+.gamefi-btn-area .menu-gamfi .sub-menu li a {
+  display: block;
+  background: #222231;
+  font-size: 16px;
+  background: rgba(19, 20, 44, 0.98);
+  backdrop-filter: blur(4px);
+  padding: 15px 24px;
+  transition: 0.4s;
+  color: rgba(255, 255, 255, 0.7);
+  border-bottom: 2px solid rgba(62, 62, 65, 0.98);
+}
+
+.gamfi-header-section .header-menu .nav-menu li a,
+.gamefi-btn-area .menu-gamfi .sub-menu li a {
+  display: block;
+  font-weight: 600;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.gamefi-btn-area .menu-gamfi .sub-menu li img {
+  margin-right: 10px;
+}
+
+.gamfi-header-section .header-menu .nav-menu li a:hover {
+  color: #fff;
+}
+
+.gamfi-header-section .header-menu ul li + li {
+  margin-left: 40px;
+}
+
+.gamfi-header-section .gamefi-btn-area .menu-gamfi {
+  display: flex;
+  position: relative;
+}
+
+.gamfi-header-section .readon {
+  padding: 11px 20px 9px;
+  border: 2px solid #393941;
+}
+
+.white-shape-small,
+.white-shape-big,
+.black-shape-big,
+.black-shape,
+.hover-shape {
+  position: relative;
+  overflow: hidden;
+}
+
+.readon,
+.white-bg-btn {
+  display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  font-weight: 600;
+}
+
+.menu-area button.readon {
+  position: relative;
+  overflow: hidden;
+}
+
+.gamfi-header-section .white-btn {
+  background: #fff;
+  color: #090a1a;
+  margin-left: 25px;
+  padding: 13px 32px 11px;
+  border: none;
+}
+
+.gamfi-header-section .white-btn img {
+  position: relative;
+  top: -1px;
+  margin-right: 10px;
+}
+
+.white-shape-small .hover-shape1,
+.white-shape-big .hover-shape1,
+.black-shape-big .hover-shape1,
+.black-shape .hover-shape1,
+.hover-shape .hover-shape1,
+.white-shape-small .hover-shape2,
+.white-shape-big .hover-shape2,
+.black-shape-big .hover-shape2,
+.black-shape .hover-shape2,
+.hover-shape .hover-shape2,
+.white-shape-small .hover-shape3,
+.white-shape-big .hover-shape3,
+.black-shape-big .hover-shape3,
+.black-shape .hover-shape3,
+.hover-shape .hover-shape3 {
+  position: absolute;
+  width: 5px;
+  background: rgba(0, 0, 0, 0.1);
+  height: 124%;
+  left: -42%;
+  top: -5px;
+  transform: rotate(22deg);
+  transition: 0.8s;
+}
+
+.white-shape-small .hover-shape1,
+.white-shape-big .hover-shape1,
+.black-shape .hover-shape1,
+.white-shape-small .hover-shape2,
+.white-shape-big .hover-shape2,
+.black-shape .hover-shape2,
+.white-shape-small .hover-shape3,
+.white-shape-big .hover-shape3,
+.black-shape .hover-shape3 {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.white-shape-small .hover-shape3,
+.white-shape-big .hover-shape3,
+.black-shape-big .hover-shape3,
+.black-shape .hover-shape3,
+.hover-shape .hover-shape3 {
+  width: 11px;
+}
+
+.gamefi-btn-area .readon:hover {
+  color: #fff;
+}
+
+.gamefi-btn-area .white-btn:hover {
+  color: #090a1a;
+}
+
+.gamefi-btn-area .readon:hover.black-shape .hover-shape1 {
+  left: 40%;
+}
+
+.gamefi-btn-area .readon:hover.black-shape .hover-shape2 {
+  left: 46.5%;
+}
+
+.gamefi-btn-area .readon:hover.black-shape .hover-shape3 {
+  left: 53%;
+}
+
+.gamefi-btn-area .readon:hover.hover-shape .hover-shape1 {
+  left: 40%;
+}
+
+.gamefi-btn-area .readon:hover.hover-shape .hover-shape2 {
+  left: 46.5%;
+}
+
+.gamefi-btn-area .readon:hover.hover-shape .hover-shape3 {
+  left: 53%;
+}
+
+.gamfi-header-section .gamefi-btn-area ul .nav-expander-15 {
+  margin-top: 15px;
+}
+
+.gamefi-btn-area ul .nav-expander .bar span {
+  height: 2px;
+  display: block;
+  background: rgba(255, 255, 255, 0.7);
+  transition: all 0.5s ease;
+  cursor: pointer;
+  list-style: none;
+}
+
+.gamfi-header-section .gamefi-btn-area ul .nav-expander .bar span.dot1 {
+  width: 20px;
+  margin-bottom: 6px;
+}
+
+.gamfi-header-section .gamefi-btn-area ul .nav-expander .bar span.dot3 {
+  width: 30px;
+  margin-bottom: 6px;
+}
+
+.gamfi-header-section .gamefi-btn-area ul .nav-expander .bar span.dot3 {
+  width: 25px;
+}
+
+.hamber-mb {
+  background: #fff;
+  padding: 66px 60px 50px 50px;
+  width: 70%;
+  right: -500px;
+  height: 100vh;
+  z-index: 999;
+  top: 0;
+  /* opacity: 0; */
+  transition: all 0.3s ease;
+  position: fixed;
+  transform: translateX(100%);
+}
+
+.hamber-mb.is-active {
+  opacity: 1;
+  right: 0px;
+  transform: translateX(0);
+}
+
+.gamfi-header-section .hamber-mb .close-btn {
+  overflow: visible;
+  position: absolute;
+  top: 20px;
+  display: block;
+  z-index: 99;
+  right: 57px;
+  font-size: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gamfi-header-section .hamber-mb .close-btn .btn-close {
+  opacity: 1;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.hamber-mb .nav-menu li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.hamber-mb .nav-menu li a {
+  padding: 10px 0;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+.connectWalletBtnforMobile {
+  width: 100%;
+  background: #6d4afe;
+  margin-top: 20px;
+  border: 1px solid #6d4afe !important;
+}
+
+.connectWalletBtnforMobile span {
+  color: #fff;
+}
+
+.gamfi-footer-section {
+  background-color: #090a1a;
+  position: relative;
+}
+
+.gamfi-footer-section .footer-cta-area {
+  background: radial-gradient(circle, #4a4176 -24%, #1e1f35 40%);
+  padding: 70px 0 80px 0;
+  position: relative;
+  z-index: 9;
+}
+
+.gamfi-footer-section .footer-cta-area h2 {
+  font-weight: 600;
+}
+
+.pt--100 {
+  padding-top: 200px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.banner-btn {
+  display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  font-family: "Russo One", sans-serif;
+  background: #a3ff12;
+  color: #090a1a;
+  padding: 19px 50px;
+}
+
+.banner-btn .btn-text {
+  font-size: 16;
+  font-weight: 700;
+}
+
+.gamfi-footer-section .black-shape .hover-shape1,
+.gamfi-footer-section .black-shape .hover-shape2,
+.gamfi-footer-section .black-shape .hover-shape3 {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.gamfi-footer-section .banner-btn:hover {
+  color: #090a1a;
+  cursor: pointer;
+}
+
+.gamfi-footer-section .banner-btn:hover.black-shape .hover-shape1 {
+  left: 40%;
+}
+
+.banner-btn:hover.black-shape .hover-shape2 {
+  left: 46.5%;
+}
+
+.banner-btn:hover.black-shape .hover-shape3 {
+  left: 53%;
+}
+
+.active-shape .border-shadow,
+.hover-shape-border .border-shadow {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 9;
+}
+
+.active-shape .shadow-1 {
+  top: 0px;
+  left: 0;
+  width: 5px;
+  height: 200px;
+  background: linear-gradient(
+    to bottom,
+    #f82552 -100%,
+    rgba(21, 22, 37, 0) 64%
+  );
+}
+
+.active-shape .shadow-2 {
+  background: linear-gradient(to right, #f82552 -100%, rgba(21, 22, 37, 0) 64%);
+  top: 0px;
+  left: 5px;
+  width: 200px;
+  height: 5px;
+}
+
+.active-shape .shadow-3 {
+  bottom: 0px;
+  right: 0;
+  width: 5px;
+  height: 200px;
+  background: linear-gradient(to top, #a3ff12 -100%, rgba(21, 22, 37, 0) 64%);
+}
+
+.active-shape .shadow-4 {
+  bottom: 0px;
+  right: 5px;
+  width: 200px;
+  height: 5px;
+  background: linear-gradient(to left, #a3ff12 -100%, rgba(21, 22, 37, 0) 64%);
+}
+
+.hover-shape-inner .hover-shape-bg {
+  width: 35px;
+  height: 100%;
+  transform: skew(-26deg);
+  display: inline-block;
+  margin: 0 5.5px;
+  transition: 0.3s;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0),
+    rgba(150, 136, 217, 0.06) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.hover-shape-inner .hover_shape1 {
+  left: 40%;
+}
+
+.hover-shape-inner .hover_shape2 {
+  left: 46.5%;
+}
+
+.hover-shape-inner .hover_shape3 {
+  left: 53%;
+  width: 60px;
+}
+
+.mb-52 {
+  margin-bottom: 52px;
+}
+
+.gamfi-footer-section .footer-area {
+  background: url(../image/bg/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  position: relative;
+  padding-top: 250px;
+  margin-top: -150px;
+}
+
+.sec-heading .heading-right-image {
+  margin-right: 10px;
+}
+
+.sec-heading .heading-left-image {
+  margin-left: 10px;
+}
+
+.sec-heading .sub-title {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Russo One", sans-serif;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.gamfi-footer-section .footer-listing .footer-icon-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-icon-list li {
+  display: inline-block;
+}
+
+.footer-icon-list li {
+  color: rgb(37, 37, 37);
+  width: 60px;
+  height: 60px;
+  background: url(../image/icon/icon-image.png);
+  line-height: 60px;
+  margin: 0 12px;
+  transition: 0.4s;
+  font-size: 25px;
+}
+
+.mb-45 {
+  margin-bottom: 45px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-35 {
+  margin-bottom: 35px;
+}
+
+.footer-mainmenu ul li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.footer-mainmenu ul li a {
+  color: rgba(255, 255, 255, 0.7);
+  transition: 0.4s;
+}
+
+.scrollup {
+  padding-top: 10px;
+  padding-bottom: 35px;
+}
+
+.scrollup a i {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+
+
+/* media screen */
+@media only screen and (max-width: 1400px) {
+}
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 992px) {
+  .gamfi-footer-section .footer-cta-area {
+    padding: 60px 20px;
+  }
+  .banner-btn {
+    padding: 14px 30px;
+  }
+  .md-mb-70 {
+    margin-bottom: 70px;
+  }
+  .mb-mb-30 {
+    margin-bottom: 30px;
+  }
+  .md-mb-25 {
+    margin-bottom: 25px;
+  }
+  .footer-icon-list li {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 8px;
+    font-size: 18px;
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+  h2 {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .gamfi-header-section .gamefi-btn-area ul .nav-expander-15 {
+    margin-top: 0px;
+  }
+  .xs-mb-50 {
+    margin-bottom: 50px;
+  }
+  .footer-icon-list li {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 4px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .footer-logo img,
+  .sidebar-logo img,
+  .gamfi-header-section .logo img {
+    max-width: 120px;
+  }
+  .footer-icon-list li {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 2px;
+    font-size: 13px;
+  }
+  .footer-logo img {
+    max-width: 120px;
+  }
+}
+/* media screen */
