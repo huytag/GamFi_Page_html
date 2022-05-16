@@ -24,6 +24,7 @@
         });
       }
     }
+    
 
     function onCloseHamberMobile() {
       const elHamber = $(".hamber-mb");
