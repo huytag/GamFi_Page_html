@@ -6,7 +6,7 @@ body {
   line-height: 1.6;
   font-weight: 500;
   overflow-x: hidden;
-  /* background-color: #151625; */
+  background-color: #151625;
 }
 
 a {
@@ -14,6 +14,10 @@ a {
   transition: all 0.3s ease;
   text-decoration: none !important;
   outline: none !important;
+}
+
+a:hover {
+  color: #ffffffb3;
 }
 
 h2 {
@@ -51,7 +55,7 @@ img {
 }
 
 .gamfi-header-section.transparent-header {
-  /* background: transparent; */
+  background: transparent;
   position: absolute;
   width: 100%;
   z-index: 12;
@@ -376,10 +380,6 @@ img {
   font-weight: 600;
 }
 
-.pt--100 {
-  padding-top: 200px;
-}
-
 .mb-15 {
   margin-bottom: 15px;
 }
@@ -588,7 +588,207 @@ img {
   cursor: pointer;
 }
 
+.pb-110 {
+  padding-bottom: 110px;
+}
 
+.gamfi-partner-section {
+  background: #0a0b1a;
+}
+
+.pt-115 {
+  padding-top: 115px;
+}
+
+.pb-85 {
+  padding-bottom: 85px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.green-text {
+  color: #a3ff12;
+}
+
+.gamfi-team-section {
+  background: url(../image/bg/team-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-color: #090a1a;
+}
+
+.gamfi-team-section .team-item img {
+  margin-bottom: 45px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.gamfi-team-section .team-item {
+  background: rgba(26, 27, 47, 0.85);
+  backdrop-filter: blur(5px);
+  margin-bottom: 30px;
+  padding: 35px 0 30px 0;
+  /* transition: 1.4s; */
+}
+
+.gamfi-team-section .team-item .dsc {
+  margin-bottom: 15px;
+}
+
+.gamfi-team-section .team-item .team-icon-list li {
+  display: inline-block;
+  padding: 0 7px;
+}
+
+.gamfi-team-section .team-item .border-shadow {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.gamfi-team-section .team-item:hover .border-shadow {
+  opacity: 1;
+  visibility: inherit;
+}
+.gamfi-team-section .team-item:hover {
+  background: radial-gradient(circle, #4a4176 -24%, #1e1f35 80%);
+}
+
+.gamfi-tokenomics-section {
+  position: relative;
+}
+
+.pb-115 {
+  padding-bottom: 115px;
+}
+
+.pt-115 {
+  padding-top: 115px;
+}
+
+.V1_tokenomics_content_List_Sect {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-bottom: 73px;
+}
+
+.V1_tokenomics_content_List {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.V1_tokenomics_content_List_1 {
+  width: 7.5%;
+}
+
+.V1_tokenomics_content_List_2 {
+  width: 9.5%;
+}
+
+.V1_tokenomics_content_List_3 {
+  width: 10%;
+}
+
+.V1_tokenomics_content_List_4 {
+  width: 12%;
+}
+
+.V1_tokenomics_content_List_5 {
+  width: 16.33%;
+}
+
+.V1_tokenomics_content_List_6 {
+  width: 18%;
+}
+
+.V1_tokenomics_content_List_7 {
+  width: 30%;
+}
+.V1_tokenomics_content_ListText {
+  margin-bottom: 16px;
+  margin-right: 16px;
+}
+
+.V1_tokenomics_content_ListText h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0px;
+}
+
+.V1_tokenomics_content_ListText h5 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+
+.V1_tokenomics_content_ListProgress {
+  width: 100%;
+  height: 60px;
+}
+
+.V1_tokenomics_content_ListProgress1 {
+  background: rgba(109, 74, 254, 0.2);
+}
+
+.V1_tokenomics_content_ListProgress2 {
+  background: rgba(109, 74, 254, 0.3);
+}
+
+.V1_tokenomics_content_ListProgress3 {
+  background: rgba(109, 74, 254, 0.4);
+}
+
+.V1_tokenomics_content_ListProgress4 {
+  background: rgba(109, 74, 254, 0.5);
+}
+
+.V1_tokenomics_content_ListProgress5 {
+  background: rgba(109, 74, 254, 0.6);
+}
+
+.V1_tokenomics_content_ListProgress6 {
+  background: rgba(109, 74, 254, 0.7);
+}
+
+.V1_tokenomics_content_ListProgress7 {
+  background: rgba(109, 74, 254, 0.8);
+}
+
+.gamfi-tokenomics-section .counter-number {
+  font-size: 36px;
+  color: #6d4afe;
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.gamfi_tokenomics_CornerImgs .gamfi_tokenomics_CornerImg1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.gamfi_tokenomics_CornerImgs .gamfi_tokenomics_CornerImg2 {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
 
 /* media screen */
 @media only screen and (max-width: 1400px) {
@@ -607,6 +807,9 @@ img {
   .banner-btn {
     padding: 14px 30px;
   }
+  .md-pb-80 {
+    padding-bottom: 80px;
+  }
   .md-mb-70 {
     margin-bottom: 70px;
   }
@@ -616,6 +819,18 @@ img {
   .md-mb-25 {
     margin-bottom: 25px;
   }
+  .md-pt-75 {
+    padding-top: 75px;
+  }
+  .md-pb-42 {
+    padding-bottom: 42px;
+  }
+  .md-pt-75 {
+    padding-top: 75px;
+  }
+  .md-pb-45 {
+    padding-bottom: 45px;
+  }
   .footer-icon-list li {
     width: 50px;
     height: 50px;
@@ -623,12 +838,66 @@ img {
     margin: 0 8px;
     font-size: 18px;
   }
-
 }
 
 @media only screen and (max-width: 767px) {
   h2 {
     font-size: 22px;
+  }
+  .V1_tokenomics_content_List_Sect {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .V1_tokenomics_content_List {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .V1_tokenomics_content_ListProgress {
+    height: 40px;
+  }
+  .V1_tokenomics_content_List_1,
+  .V1_tokenomics_content_List_2,
+  .V1_tokenomics_content_List_3,
+  .V1_tokenomics_content_List_4,
+  .V1_tokenomics_content_List_5,
+  .V1_tokenomics_content_List_6,
+  .V1_tokenomics_content_List_7 {
+    width: 100%;
+    flex-direction: row;
+  }
+  .V1_tokenomics_content_ListProgress1 {
+    width: 100px;
+  }
+  .V1_tokenomics_content_ListProgress2 {
+    width: 120px;
+  }
+  .V1_tokenomics_content_ListProgress3 {
+    width: 130px;
+  }
+  .V1_tokenomics_content_ListProgress4 {
+    width: 160px;
+  }
+  .V1_tokenomics_content_ListProgress5 {
+    width: 190px;
+  }
+  .V1_tokenomics_content_ListProgress6 {
+    width: 200px;
+  }
+  .V1_tokenomics_content_ListProgress7 {
+    width: 270px;
+  }
+  .V1_tokenomics_content_ListText {
+    margin-bottom: 0px;
+    min-width: 91px;
+  }
+
+  .V1_tokenomics_content_ListText h4,
+  .V1_tokenomics_content_ListText h5 {
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -662,6 +931,9 @@ img {
   }
   .footer-logo img {
     max-width: 120px;
+  }
+  .footer-mainmenu ul li {
+    display: block;
   }
 }
 /* media screen */

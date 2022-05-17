@@ -4,7 +4,21 @@
       onShowHamberMobile();
       onCloseHamberMobile();
       onScrollTop();
+      liveSlickPartNer();
+      teamItemHover();
     });
+
+    function teamItemHover() {
+      $(".team-item").hover(
+        function () {
+          $(".team-item").addClass("active-shape");
+        },
+        function () {
+          $(".team-item").removeClass("active-shape");
+        }
+      )
+    }
+
 
     function onScrollTop() {
       const elClick = $("#srcoll-Up");
@@ -24,7 +38,7 @@
         });
       }
     }
-    
+
 
     function onCloseHamberMobile() {
       const elHamber = $(".hamber-mb");
@@ -36,15 +50,21 @@
       }
     }
 
-    function liveSlickListTopFooter() {
-      $(".slick-list-top-header")
+    function liveSlickPartNer() {
+      $(".slick-partner")
         .not(".slick-initialized")
         .slick({
-          dots: false,
-          infinite: false,
+          // dots: false,
+          // infinite: false,
           speed: 300,
-          slidesToShow: 6,
+          slidesToShow: 5,
           slidesToScroll: 1,
+          prevArrow: false,
+          nextArrow: false,
+          autoplay: true,
+          arrows: true,
+          autoplaySpeed: 0,
+					speed: 5000,
           responsive: [
             {
               breakpoint: 1200,
@@ -53,8 +73,6 @@
                 slidesToScroll: 1,
                 infinite: false,
                 dots: false,
-                prevArrow: false,
-                nextArrow: false,
               },
             },
             {
