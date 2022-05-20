@@ -14,6 +14,7 @@ a {
   transition: all 0.3s ease;
   text-decoration: none !important;
   outline: none !important;
+  font-family: "Russo One", sans-serif;
 }
 
 p {
@@ -46,7 +47,7 @@ h6 {
   color: #ffffff;
   margin: 0 0 26px;
   line-height: 1.35;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 ul {
@@ -413,7 +414,7 @@ img {
 
 .banner-btn .btn-text {
   font-size: 16;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .gamfi-footer-section .black-shape .hover-shape1,
@@ -1253,7 +1254,8 @@ img {
 
 .gamfi-about-secion .game-price-item .game-price-inner .all-raise {
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 400;
+  font-family: "Russo One", sans-serif;
 }
 
 .gamfi-about-secion
@@ -1263,7 +1265,8 @@ img {
   .allocation {
   color: #ffffff;
   margin-top: 73px;
-  font-weight: 600;
+  font-weight: 400;
+  font-family: "Russo One", sans-serif;
 }
 
 .gamfi-about-secion .game-price-item .game-price-inner .allocation-max img {
@@ -1297,7 +1300,8 @@ img {
 .timer ul li {
   font-size: 30px;
   color: #fff;
-  font-weight: 700;
+  font-weight: 400;
+  font-family: "Russo One", sans-serif;
 }
 
 .timer ul li span {
@@ -1311,7 +1315,8 @@ img {
   .targeted-raise
   .targeted-raise {
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 400;
+  font-family: "Russo One", sans-serif;
 }
 
 .gamfi-about-secion .total-price .targeted-raise,
