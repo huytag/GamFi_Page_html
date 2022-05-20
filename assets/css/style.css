@@ -362,7 +362,14 @@ img {
 .hamber-mb .nav-menu li a {
   padding: 10px 0;
   line-height: 30px;
-  font-weight: 600;
+  font-weight: 400;
+  color: #090b1a;
+  font-family: "Russo One", sans-serif;
+
+}
+
+.hamber-mb .nav-menu li svg {
+  color: #090b1a;
 }
 
 .connectWalletBtnforMobile {
