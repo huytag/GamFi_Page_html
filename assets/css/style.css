@@ -16,8 +16,19 @@ a {
   outline: none !important;
 }
 
+p {
+  margin: 0 0 26px;
+  line-height: 1.8;
+}
+
 a:hover {
   color: #ffffffb3;
+}
+
+h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 h2 {
@@ -35,7 +46,7 @@ h6 {
   color: #ffffff;
   margin: 0 0 26px;
   line-height: 1.35;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 ul {
@@ -472,6 +483,11 @@ img {
   background: linear-gradient(to left, #a3ff12 -100%, rgba(21, 22, 37, 0) 64%);
 }
 
+.active-shape,
+.hover-shape-border {
+  position: relative;
+}
+
 .hover-shape-inner .hover-shape-bg {
   width: 35px;
   height: 100%;
@@ -790,14 +806,633 @@ img {
   right: 0px;
 }
 
+.pb-90 {
+  padding-bottom: 90px;
+}
+
+.gamfi-previous-section {
+  background: #090b1a;
+}
+
+.view-more {
+  border: 2px solid #2e2f3c;
+  color: #fff;
+  padding: 12px 25px 8px;
+  text-transform: uppercase;
+  transition: 0.4s;
+  overflow: hidden;
+  display: block;
+  font-weight: 700;
+}
+
+.view-more .fa-angle-right {
+  font-size: 20px;
+  padding-left: 15px;
+}
+
+.view-more .fa-calendar-alt {
+  font-size: 15px;
+  padding-right: 15px;
+}
+
+.view-more:hover {
+  cursor: pointer;
+}
+
+.view-more:hover.black-shape .hover-shape1 {
+  left: 40%;
+}
+
+.view-more:hover.black-shape .hover-shape2 {
+  left: 46.5%;
+}
+
+.view-more:hover.black-shape .hover-shape3 {
+  left: 53%;
+}
+
+.gamfi-previous-section .previous-mainmenu ul {
+  padding: 0 30px;
+}
+
+.gamfi-previous-section .previous-mainmenu ul li {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  transition: 0.4s;
+  font-weight: 700;
+}
+
+.gamfi-previous-section .previous-mainmenu ul .list1 {
+  width: 34.5%;
+}
+
+.gamfi-previous-section .previous-mainmenu ul .list2 {
+  width: 10.5%;
+}
+
+.gamfi-previous-section .previous-mainmenu ul .list3 {
+  width: 17.8%;
+}
+
+.gamfi-previous-section .previous-mainmenu ul .list4 {
+  width: 17.4%;
+}
+
+.gamfi-previous-section .previous-mainmenu ul .list5 {
+  width: 14%;
+}
+
+.gamfi-previous-section .previous-item {
+  background: #1a1b30;
+  margin-bottom: 30px;
+  padding: 30px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.4s;
+  color: #fff;
+}
+
+.gamfi-previous-section .previous-item .previous-gaming {
+  width: 44%;
+  display: flex;
+}
+
+.gamfi-previous-section .previous-item .previous-chaining {
+  width: 36%;
+  display: flex;
+  align-items: center;
+}
+
+.gamfi-previous-section .previous-item .previous-chaining img {
+  margin-right: 82px;
+}
+
+.gamfi-previous-section .previous-item .previous-raise {
+  display: flex;
+  width: 45%;
+  align-items: center;
+}
+
+.gamfi-previous-section .previous-item .previous-gaming img {
+  margin-right: 20px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.previous-price h4 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.previous-price .dsc {
+  color: #ffffffb3;
+}
+
+.gamfi-previous-section .previous-item .previous-raise span {
+  margin-right: 35px;
+}
+
+.gamfi-previous-section .previous-item .previous-raise .progress-inner {
+  width: 196px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px;
+}
+
+.gamfi-previous-section .progress-inner .progress,
+.gamfi-previous-section .progress-inner .progress-bar {
+  background-size: 10px 20px;
+  height: 6px;
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0);
+  background-image: linear-gradient(
+    60deg,
+    rgba(255, 255, 255, 0.15) 26%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.15) 54%,
+    rgba(255, 255, 255, 0.15) 82%,
+    transparent 75%,
+    transparent
+  );
+  height: 12px;
+}
+
+.gamfi-previous-section .progress-inner .progress-bar {
+  background-image: linear-gradient(
+    60deg,
+    #a3ff12 26%,
+    transparent 25%,
+    transparent 50%,
+    #a3ff12 54%,
+    #a3ff12 82%,
+    transparent 75%,
+    transparent
+  );
+}
+
+.gamfi-previous-section .progress-inner .progress,
+.gamfi-previous-section .progress-inner .progress-bar {
+  background-size: 10px 20px;
+  height: 6px;
+}
+
+.gamfi-previous-section .previous-item .border-shadow {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.gamfi-previous-section .previous-item:hover .border-shadow {
+  opacity: 1;
+  visibility: inherit;
+}
+
+.gamfi-previous-section .previous-item:hover {
+  background: radial-gradient(circle, #4a4176 -24%, #1e1f35 30%);
+}
+
+.gamfi-previous-section .previous-item .hover-shape-bg {
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  width: 14px;
+}
+
+.gamfi-previous-section .previous-item:hover .hover-shape-bg {
+  opacity: 1;
+  visibility: inherit;
+}
+
+.gamfi-previous-section .previous-item .hover_shape1 {
+  left: 46.5%;
+}
+
+.gamfi-previous-section .previous-item .hover_shape2 {
+  left: 48.5%;
+}
+
+.gamfi-previous-section .previous-item .hover_shape3 {
+  width: 26px;
+  left: 50.5%;
+}
+
+.gamfi-project-section {
+  background: url(../image/bg/project-bg.jpg);
+  padding-top: 115px;
+  padding-bottom: 105px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.gamfi-project-section .project-item {
+  background: rgba(30, 31, 53, 0.8);
+  margin-bottom: 30px;
+  padding: 30px 30px 10px;
+}
+
+.gamfi-project-section .project-item .project-info {
+  margin-bottom: 28px;
+}
+
+.gamfi-project-section .project-item .project-info img {
+  margin-right: 20px;
+}
+
+.gamfi-project-section .project-item .project-auother h4 {
+  font-weight: 700;
+}
+
+.gamfi-project-section .project-item .heading-title {
+  margin-bottom: 40px;
+}
+
+.gamfi-project-section .project-item .heading-title h4 {
+  font-size: 16px;
+  margin-bottom: 0;
+  position: relative;
+  font-weight: 600;
+}
+
+.gamfi-project-section .project-item .heading-title h4:before {
+  width: 197px;
+  height: 35px;
+  content: "";
+  background-image: url(../image/bg/shape-bg.png);
+  position: absolute;
+  left: -30px;
+  top: -7px;
+}
+
+.gamfi-project-section .project-item .project-media li {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 15px;
+}
+
+.gamfi-project-section .project-item .project-media li span {
+  float: right;
+  color: #fff;
+  font-weight: 600;
+}
+
+.gamfi-project-section .project-item .project-media .social-icon-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+  margin-top: -22px;
+}
+
+.gamfi-project-section .project-item .project-media .social-icon-list li {
+  display: inline-block;
+  padding-bottom: 0;
+  padding-left: 10px;
+}
+
+.gamfi-project-section .project-item .border-shadow {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.gamfi-project-section .project-item:hover .border-shadow {
+  opacity: 1;
+  visibility: inherit;
+}
+
+.gamfi-project-section .project-item:hover {
+  background: radial-gradient(circle, #4a4176 -24%, #1e1f35 70%);
+}
+
+.gamfi-about-secion {
+  background: #151625;
+}
+
+.pb-80 {
+  padding-bottom: 80px;
+}
+
+.pt-130 {
+  padding-top: 130px;
+}
+
+.participate-item .number-image {
+  margin-right: 12px;
+  flex: 0 0 18%;
+}
+
+.participate-item .participate-info h4 {
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+.sc-banner {
+  z-index: 9;
+  overflow: hidden;
+  padding: 170px 0 225px;
+  background: url(../image/bg/banner-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sc-banner .banner-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.sc-banner .banner-content .banner-icon {
+  margin: 0 0 24px;
+}
+
+.sc-banner .banner-content .banner-title {
+  margin: 0 0 20px;
+}
+
+.sc-banner .banner-content .description {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 40px;
+}
+
+.sc-banner .banner-content .banner-btn:hover {
+  color: #090a1a;
+  cursor: pointer;
+}
+
+.sc-banner .banner-content .banner-btn:hover.black-shape-big .hover-shape1 {
+  left: 40%;
+}
+
+.sc-banner .banner-content .banner-btn:hover.black-shape-big .hover-shape2 {
+  left: 46.5%;
+}
+
+.sc-banner .banner-content .banner-btn:hover.black-shape-big .hover-shape3 {
+  left: 53%;
+}
+
+.gamfi-about-secion .game-price-item {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+  position: relative;
+  z-index: 9;
+}
+
+.banner-slider-inner {
+  margin-top: -156px;
+  z-index: 9;
+  position: relative;
+}
+
+.progress-inner {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px;
+}
+
+.progress-inner .progress,
+.progress-inner .progress-bar {
+  background-color: rgba(255, 255, 255, 0);
+  background-size: 14px 32px;
+  background-image: linear-gradient(
+    60deg,
+    rgba(255, 255, 255, 0.15) 26%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.15) 54%,
+    rgba(255, 255, 255, 0.15) 82%,
+    transparent 75%,
+    transparent
+  );
+  height: 12px;
+}
+
+.progress-inner .progress-bar {
+  background-image: linear-gradient(
+    60deg,
+    #a3ff12 26%,
+    transparent 25%,
+    transparent 50%,
+    #a3ff12 54%,
+    #a3ff12 82%,
+    transparent 75%,
+    transparent
+  );
+}
+
+.hover-shape-inner {
+  background: radial-gradient(circle, #4a4176 -24%, #1e1f35 40%);
+}
+
+.gamfi-about-secion .game-price-item .game-price-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gamfi-about-secion
+  .game-price-item
+  .game-price-inner
+  .price-inner
+  .image-icon {
+  margin-right: 25px;
+}
+
+.gamfi-about-secion .total-price,
+.gamfi-about-secion .targeted-raise {
+  width: 38%;
+}
+
+.gamfi-about-secion .game-price-item .game-price-inner .all-raise {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.gamfi-about-secion
+  .game-price-item
+  .game-price-inner
+  .allocation-max
+  .allocation {
+  color: #ffffff;
+  margin-top: 73px;
+  font-weight: 600;
+}
+
+.gamfi-about-secion .game-price-item .game-price-inner .allocation-max img {
+  margin-top: 10px;
+}
+
+.game-price-inner img {
+  max-width: 100%;
+  width: auto;
+  margin: 0 auto;
+}
+
+.gamfi-about-secion
+  .game-price-item
+  .game-price-inner
+  .targeted-raise
+  .all-raise {
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+}
+
+.timer {
+  margin-bottom: 48px;
+}
+
+.timer ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.timer ul li {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.timer ul li span {
+  font-size: 16px;
+  margin-left: 2px;
+}
+
+.gamfi-about-secion
+  .game-price-item
+  .game-price-inner
+  .targeted-raise
+  .targeted-raise {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.gamfi-about-secion .total-price .targeted-raise,
+.gamfi-about-secion .targeted-raise .targeted-raise {
+  width: 100%;
+}
+
+.banner-slider-inner .game-price-item  {
+  /* margin-right: 70px; */
+  margin: 0 30px;
+}
+
+/* banner slick inner  */
+.banner-slider-inner .slick-dots {
+  /* width: calc(100% - 70px); */
+}
+
+.banner-slider-inner .slick-dots li {
+  margin: 0;
+}
+
+.slick-dots li button:before {
+  content: "";
+  width: 11px;
+  height: 9px;
+}
+
+.banner-slider-inner .slick-dots li button {
+  width: 11px;
+  height: 9px;
+  transform: skew(20deg);
+  background: rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  margin: 0 5.5px;
+  transition: 0.3s;
+}
+
+.banner-slider-inner .slick-dots li button:hover {
+  background: #fff;
+}
+
+.banner-slider-inner .slick-dots .slick-active button {
+  background: #fff;
+}
+
+
+
+/* banner slick inner  */
+
+/* animation */
+
+.sc-animation-30 {
+  animation-duration: 900ms;
+  animation-timing-function: ease;
+  animation-delay: 300ms;
+  animation-name: animationScroll;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
+
+.sc-animation-50 {
+  animation-duration: 900ms;
+  animation-timing-function: ease;
+  animation-delay: 800ms;
+  animation-name: animationScroll;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
+
+.sc-animation-70 {
+  animation-duration: 900ms;
+  animation-timing-function: ease;
+  animation-delay: 1000ms;
+  animation-name: animationScroll;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
+
+@keyframes animationScroll {
+  0% {
+    transform: translateY(40%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+/* animation */
+
 /* media screen */
 @media only screen and (max-width: 1400px) {
 }
 
 @media only screen and (max-width: 1200px) {
+  .gamfi-about-secion .game-price-item {
+    padding: 30px;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
+  .gamfi-previous-section .previous-item .previous-chaining {
+    margin: 20px 0;
+  }
+  .gamfi-previous-section .previous-item .previous-raise,
+  .gamfi-previous-section .previous-item .previous-chaining,
+  .gamfi-previous-section .previous-item .previous-gaming {
+    width: 100%;
+  }
+  .project-menu-area .project-right-menu ul li,
+  .gamfi-previous-section .previous-item,
+  body .gamfi-previous-section .previous-mainmenu ul li {
+    display: block;
+  }
+  .gamfi-previous-section .previous-item .previous-raise .progress-inner {
+    width: 140px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -828,8 +1463,14 @@ img {
   .md-pt-75 {
     padding-top: 75px;
   }
+  .md-pb-50 {
+    padding-bottom: 50px;
+  }
   .md-pb-45 {
     padding-bottom: 45px;
+  }
+  .md-mb-20 {
+    margin-bottom: 20px;
   }
   .footer-icon-list li {
     width: 50px;
@@ -837,6 +1478,65 @@ img {
     line-height: 50px;
     margin: 0 8px;
     font-size: 18px;
+  }
+  .gamfi-previous-section .previous-item .previous-gaming img {
+    width: 50px;
+    margin-right: 20px;
+  }
+  .sc-banner .banner-content .banner-title {
+    margin: 0 0 20px;
+    font-size: 40px;
+  }
+  .sc-banner {
+    padding: 150px 0 200px;
+  }
+  .gamfi-about-secion .game-price-item .game-price-inner .price-inner,
+  .gamfi-about-secion .game-price-item .game-price-inner {
+    display: block !important;
+  }
+  .gamfi-about-secion .allocation-max,
+  .gamfi-about-secion .total-price,
+  .gamfi-about-secion .targeted-raise {
+    width: 100%;
+  }
+  .gamfi-about-secion
+    .game-price-item
+    .game-price-inner
+    .price-inner
+    .image-icon {
+    margin-right: 0;
+  }
+  .gamfi-about-secion
+    .game-price-item
+    .game-price-inner
+    .targeted-raise
+    .targeted-raise,
+  .gamfi-about-secion .game-price-item .game-price-inner .all-raise,
+  .gamfi-about-secion .game-price-item .game-price-inner .price-inner {
+    text-align: center !important;
+  }
+  .timer {
+    max-width: 400px;
+    margin: 0 auto 20px;
+  }
+  .gamfi-about-secion
+    .game-price-item
+    .game-price-inner
+    .allocation-max
+    .allocation {
+    margin-top: 35px;
+  }
+  .gamfi-about-secion
+    .game-price-item
+    .game-price-inner
+    .targeted-raise
+    .targeted-raise,
+  .gamfi-about-secion
+    .game-price-item
+    .game-price-inner
+    .price-inner
+    .image-icon {
+    margin-bottom: 10px;
   }
 }
 
@@ -899,6 +1599,23 @@ img {
     font-size: 14px;
     line-height: 18px;
   }
+  .gamfi-previous-section .previous-mainmenu ul {
+    padding: 0;
+  }
+  .gamfi-previous-section .previous-mainmenu ul li {
+    width: 100% !important;
+    padding: 0px 0px 14px;
+    left: 0 !important;
+  }
+  .gamfi-previous-section .previous-item .previous-chaining img {
+    margin-right: 20px;
+  }
+  .sc-banner .banner-content .banner-title {
+    font-size: 30px;
+  }
+  .banner-slider-inner .game-price-item  {
+    margin: 0 5px;
+  }
 }
 @media only screen and (max-width: 576px) {
   .gamfi-header-section .gamefi-btn-area ul .nav-expander-15 {
@@ -913,6 +1630,23 @@ img {
     line-height: 40px;
     margin: 0 4px;
     font-size: 15px;
+  }
+  .sc-banner .banner-content .banner-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .sc-banner .banner-content .description {
+    font-size: 16px;
+    margin: 0 0 30px;
+  }
+  .sec-inner.d-flex,
+  .heading-area.d-flex {
+    display: block !important;
+    margin-bottom: 40px;
+  }
+  .view-more {
+    padding: 10px 20px 6px;
+    display: inline-block;
   }
 }
 
@@ -934,6 +1668,9 @@ img {
   }
   .footer-mainmenu ul li {
     display: block;
+  }
+  .sc-banner .banner-content .banner-title {
+    font-size: 24px;
   }
 }
 /* media screen */
